@@ -2,6 +2,7 @@ use clap::Parser;
 use std::env;
 
 #[derive(Parser, Debug)]
+#[command(version)]
 struct Args {
     #[clap(long, value_delimiter = ',')]
     envs: Vec<String>,
